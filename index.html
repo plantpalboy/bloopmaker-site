@@ -137,7 +137,10 @@
     .btn-demo { background: var(--bloop-mint); }
     .btn-demo:hover { background: #5cf0d6; }
     .btn-mini { font-size: 15px; padding: 8px 16px; border-width: 3px; box-shadow: 0 4px 0 var(--bloop-ink); border-radius: 12px; background: var(--bloop-yellow); }
-    .buybar .btn-demo { background: var(--bloop-mint); }
+    .buybar { flex-wrap: wrap; }
+    .buybar .btn-demo  { background: var(--bloop-mint); }
+    .buybar .btn-info  { background: var(--bloop-blue); }
+    .buybar .btn-info2 { background: var(--bloop-purple); color: #fff; }
 
     .platforms { text-align: center; font-weight: 900; font-size: 15px; opacity: .7; margin-bottom: 26px; letter-spacing: .5px; }
 
@@ -159,7 +162,6 @@
 
     .page p { margin: 0 0 22px; }
     .page .lead { font-size: 1.12em; }
-    .page .lead strong { color: var(--bloop-purple); }
     .page strong { color: #111; font-weight: 900; }
     .page em { color: var(--bloop-purple); font-style: normal; font-weight: 900; }
 
@@ -253,6 +255,8 @@
 
   <div class="buybar">
     <span class="mini-logo">b<b>loop</b>maker</span>
+    <a class="btn btn-mini btn-info" href="./how-it-works.html">How It Works</a>
+    <a class="btn btn-mini btn-info2" href="./faq.html">FAQ</a>
     <a class="btn btn-mini btn-demo" href="./app/">Try Demo</a>
     <a class="btn btn-mini" href="https://plantpalboy.itch.io/">Get it · $12.99</a>
   </div>
@@ -270,7 +274,7 @@
       A little Bloop machine for making game music without touching the forbidden <em>AI slop</em>.
     </p>
 
-    <div class="platforms">Windows · macOS · Linux · runs offline · instant generation · no account</div>
+    <div class="platforms">Windows · macOS · Linux · runs offline · no account</div>
 
     <div class="cta-row">
       <button class="btn btn-info" data-modal="features-modal">Features &amp; How It Works</button>
@@ -282,17 +286,17 @@
       <button class="gal-arrow gal-prev" id="gal-prev" aria-label="Previous">‹</button>
       <button class="gal-arrow gal-next" id="gal-next" aria-label="Next">›</button>
       <div class="thumbs" id="gal-thumbs"></div>
-      <div class="gal-empty" id="gal-empty" style="display:none;">screenshots coming soon...</div>
+      <div class="gal-empty" id="gal-empty" style="display:none;">Add a video + screenshots to the landing/media/ folder to show them here</div>
     </div>
 
-    <p class="lead"><strong>Bloop Maker is a desktop app that writes original video game music for you.</strong> Set the rules, hit one button, and it composes a complete multi-track song <strong>instantly, with no waiting and no loading</strong>. Edit it, then export it as MIDI or audio for your project.</p>
+    <p class="lead"><strong><span style="color:var(--bloop-purple)">Bloop Maker</span> is a desktop app that writes original video game music for you.</strong> Pick a vibe, hit one button, and it composes a complete multi-track song <strong>instantly, with no waiting and no loading</strong>. Edit it, then export it as MIDI or audio for your project.</p>
 
     <p>Every song is built from music theory rules written in code. No AI. No samples. The music is yours, free and clear, for your game, stream, video, or whatever cool thing you're making. Music should not be the scary part.</p>
 
     <p>Made for <strong>indie game developers</strong>, <strong>streamers</strong>, <strong>YouTubers</strong>, <strong>artists</strong>, and <strong>game jam makers</strong> who need original background music <em>right now</em> without copyright trouble or "is this AI?" worries.</p>
 
     <div style="background:rgba(185,108,255,.1);border:3px solid var(--bloop-purple);border-radius:16px;padding:18px 22px;margin:10px 0 24px">
-      <p style="margin:0;font-weight:900"><span style="color:var(--bloop-purple)">What kind of tool is this?</span> A creative co-pilot, not a one-click hit machine. It gives you a song to start from, plus a toolbox of buttons to reshape it: steer the mood, swing the groove, simplify a part, lock a hook, regenerate any channel.</p>
+      <p style="margin:0;font-weight:900"><span style="color:var(--bloop-purple)">What kind of tool is this?</span> A creative co-pilot, not a one-click hit machine. It gives you a song to start from, plus a toolbox of buttons to reshape it: steer the mood, swing the groove, simplify a part, lock a hook, regenerate any channel. A fast spark for musicians, and a boost when your brain needs a nudge.</p>
     </div>
 
     <div class="divider">✶ ✶ ✶</div>
@@ -344,6 +348,8 @@
       <li>Shape it, then <strong>Save MIDI</strong> or <strong>Save WAV</strong></li>
     </ol>
 
+    <p class="note"><strong>Note on installation:</strong> Builds are not code signed because signing certificates are expensive for solo developers, artists, and tiny software shops. On macOS, right click the app and choose <strong>Open</strong>. On Windows, click <strong>More info</strong> then <strong>Run anyway</strong>. This is normal for indie tools. The app is safe, offline, and does not send your work anywhere.</p>
+
     <div class="cta-row">
       <a class="btn btn-buy" href="https://plantpalboy.itch.io/">Get Bloop Maker · $12.99</a>
       <a class="btn btn-demo" href="./app/">Try the free demo</a>
@@ -360,7 +366,7 @@
       </div>
       <div class="modal-body">
         <h3>What Bloop Maker is</h3>
-        <p>Bloop Maker is a <strong>desktop app that composes original video game music</strong>. You set the rules, press one button, and it writes a complete multi-track song. You can edit every note, shape the feel, and export the result as a MIDI file or finished audio. It runs entirely on your own computer, works offline, and uses <strong>no AI</strong> and <strong>no samples</strong>, so every song is yours to use, with no copyright strings attached.</p>
+        <p>Bloop Maker is a <strong>desktop app that composes original video game music</strong>. You pick a vibe, press one button, and it writes a complete multi-track song. You can edit every note, shape the feel, and export the result as a MIDI file or finished audio. It runs entirely on your own computer, works offline, and uses <strong>no AI</strong> and <strong>no samples</strong>, so every song is yours to use, with no copyright strings attached.</p>
 
         <h3>How it works behind the scenes</h3>
         <p>Bloop Maker doesn't guess or imitate other music. It <strong>builds songs from music-theory rules written in code</strong>, step by step, the way a game procedurally builds a level:</p>
@@ -372,7 +378,7 @@
           <li><span class="modal-step">Phrase memory.</span> The first few bars are remembered and replayed (in key with the current chord) in later sections, with small variations each time, that's what gives a song a recognizable hook instead of aimless notes.</li>
           <li><span class="modal-step">Structure.</span> It plans an intro, verse, chorus, break, and outro, changing the energy, pitch range, and bass behavior in each section.</li>
           <li><span class="modal-step">Filling the bars.</span> Melody, harmony, bass, drums, and pad are written bar by bar, snapping key notes to chord tones, recovering from big leaps, and adding ornaments, suspensions, call-and-response, and countermelody.</li>
-          <li><span class="modal-step">Polish.</span> Final passes lock strong beats to chord tones, sprinkle in chromatic approach notes and borrowed chords for color, and adds drum fills before section changes.</li>
+          <li><span class="modal-step">Polish.</span> Final passes lock strong beats to chord tones, sprinkle in chromatic approach notes and borrowed chords for color, add drum fills before section changes, and shape a dynamics curve so the song breathes.</li>
         </ul>
 
         <h3>Generating music</h3>
@@ -415,7 +421,7 @@
         <ul>
           <li>Deterministic seeds, share a seed, get the exact same song</li>
           <li>Normal, loop, and infinite playback modes</li>
-          <li>Runs fully offline, instantly, no account, no subscription, no cloud</li>
+          <li>Runs fully offline, no account, no subscription, no cloud</li>
           <li>Windows, macOS, and Linux</li>
         </ul>
       </div>
@@ -444,13 +450,16 @@
         <p>No. After you download it, Bloop Maker runs completely offline. No account, no cloud, no data leaves your computer.</p>
 
         <h3>What do I need to hear sound?</h3>
-        <p>A free SoundFont file (.sf2), search "GeneralUser GS sf2" or "FluidR3 GM sf2". Drag it in and you'll hear audio. Without one you can still generate and export MIDI but you won't hear it play inside the app.</p>
+        <p>A free SoundFont file (.sf2), search "GeneralUser GS sf2" or "FluidR3 GM sf2". Drag it in and you'll hear audio. Without one you can still generate and export MIDI; you just won't hear it play inside the app.</p>
 
         <h3>What can I export?</h3>
         <p>Standard MIDI files that open in any DAW (FL Studio, Ableton, LMMS, Reaper, and more), WAV audio rendered with your soundfont, individual channels on their own, and full project files you can reopen later.</p>
 
         <h3>What's different in the free demo?</h3>
         <p>The demo lets you fully experience generating, editing, and hearing Bloop Maker, but it's limited to 4 channels, a few presets, arps, and archetypes, shorter songs, and no file export. The full version unlocks everything and lets you save and export your music.</p>
+
+        <h3>Why does my computer warn the app is unsigned?</h3>
+        <p>Code-signing certificates are expensive for solo developers, so the builds aren't signed. On macOS, right-click the app and choose Open. On Windows, click "More info" then "Run anyway". This is normal for indie tools, the app is safe and offline.</p>
 
         <h3>What platforms does it run on?</h3>
         <p>Windows, macOS, and Linux.</p>
